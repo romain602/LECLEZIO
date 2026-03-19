@@ -1,35 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Burgeer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1b2a;
+      color: white;
+    }
+
+    header {
+      background-color: #1b263b;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #415a77;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://images.unsplash.com/photo-1550547660-d9450f859349') no-repeat center/cover;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      background-color: rgba(0,0,0,0.6);
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1b263b;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    footer {
+      background-color: #1b263b;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
+<header>
+  <h1>Street Burgeer</h1>
+  <p>Best burgers in town</p>
+</header>
 
-    <img src="images/profile.jpg" alt="Profile picture" class="profile">
+<nav>
+  <a href="#menu">Menu</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <h1>Romain Leclezio</h1>
-
-    <p>
-        I am a student passionate about business, economics and sports.
-        I am particularly interested in finance, statistics and international environments.
-    </p>
-
-    <h2>Home Country</h2>
-
-    <div class="country">
-        <p>Mauritius</p>
-        <img src="images/mauritius-flag.png" alt="Mauritius Flag" class="flag"> </div>
-        
-    <h2>Contact</h2>
-
-    <p>josephalexis.leclezio@ieseg.fr</p>
-
+<div class="hero">
+  <h2>Fresh. Fast. Delicious.</h2>
 </div>
+
+<section id="menu" class="section">
+  <h2>Our Menu</h2>
+  <div class="menu">
+    <div class="card">
+      <h3>Classic Burger</h3>
+      <p>Beef, cheese, lettuce, tomato</p>
+      <p>€8</p>
+    </div>
+
+    <div class="card">
+      <h3>Chicken Burger</h3>
+      <p>Crispy chicken, salad, sauce</p>
+      <p>€7</p>
+    </div>
+
+    <div class="card">
+      <h3>Double Burger</h3>
+      <p>Double beef, cheese, bacon</p>
+      <p>€10</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>Street Burgeer is a modern street food restaurant serving high-quality burgers with fresh ingredients.</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: contact@streetburgeer.com</p>
+  <p>Location: Your City</p>
+</section>
+
+<footer>
+  <p>© 2026 Street Burgeer. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
